@@ -18,22 +18,22 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            rigidbody.AddForce(new Vector3(0, 0, 1) * power);
+            rigidbody.AddForce(new Vector3(0, 0, 3) * power);
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            rigidbody.AddForce(new Vector3(-1,0,0)*power);
+            rigidbody.AddForce(new Vector3(-3, 0, 0) * power);
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            rigidbody.AddForce(new Vector3(1, 0, 0) * power);
+            rigidbody.AddForce(new Vector3(3, 0, 0) * power);
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            rigidbody.AddForce(new Vector3(0, 0, -1) * power);
+            rigidbody.AddForce(new Vector3(0, 0, -3) * power);
         }
     }
 }
